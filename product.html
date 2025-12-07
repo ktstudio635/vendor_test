@@ -89,7 +89,7 @@
         }
 
         // 讀 meta.yaml
-        const metaText = await fetch(`products/${id}/meta.yaml`).then(r => r.text());
+        const metaText = await fetch(`products/A/${id}/meta.yaml`).then(r => r.text());
         const meta = jsyaml.load(metaText);
 
         // 組輪播圖片
@@ -152,5 +152,6 @@
 </script>
 </body>
 </html>
+
 
 
